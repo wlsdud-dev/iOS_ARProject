@@ -8,21 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		F3CFD80F2BE0CC63001353AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFD80E2BE0CC63001353AD /* AppDelegate.swift */; };
-		F3CFD8112BE0CC63001353AD /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = F3CFD8102BE0CC63001353AD /* art.scnassets */; };
 		F3CFD8132BE0CC63001353AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFD8122BE0CC63001353AD /* ViewController.swift */; };
 		F3CFD8162BE0CC63001353AD /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F3CFD8152BE0CC63001353AD /* Base */; };
 		F3CFD8182BE0CC65001353AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3CFD8172BE0CC65001353AD /* Assets.xcassets */; };
 		F3CFD81B2BE0CC65001353AD /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F3CFD81A2BE0CC65001353AD /* Base */; };
+		F3CFD8222BE0D4F8001353AD /* ARMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFD8212BE0D4F8001353AD /* ARMarker.swift */; };
+		F3CFD8242BE0D50F001353AD /* SCNNode+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFD8232BE0D50F001353AD /* SCNNode+.swift */; };
+		F3CFD8262BE0D5B5001353AD /* ARTest.json in Resources */ = {isa = PBXBuildFile; fileRef = F3CFD8252BE0D5B5001353AD /* ARTest.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F3CFD80B2BE0CC63001353AD /* ARProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3CFD80E2BE0CC63001353AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F3CFD8102BE0CC63001353AD /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		F3CFD8122BE0CC63001353AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F3CFD8152BE0CC63001353AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F3CFD8172BE0CC65001353AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3CFD81A2BE0CC65001353AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F3CFD8212BE0D4F8001353AD /* ARMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARMarker.swift; sourceTree = "<group>"; };
+		F3CFD8232BE0D50F001353AD /* SCNNode+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNNode+.swift"; sourceTree = "<group>"; };
+		F3CFD8252BE0D5B5001353AD /* ARTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ARTest.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +59,14 @@
 		F3CFD80D2BE0CC63001353AD /* ARProject */ = {
 			isa = PBXGroup;
 			children = (
+				F3CFD8232BE0D50F001353AD /* SCNNode+.swift */,
+				F3CFD8212BE0D4F8001353AD /* ARMarker.swift */,
 				F3CFD80E2BE0CC63001353AD /* AppDelegate.swift */,
-				F3CFD8102BE0CC63001353AD /* art.scnassets */,
 				F3CFD8122BE0CC63001353AD /* ViewController.swift */,
 				F3CFD8142BE0CC63001353AD /* Main.storyboard */,
 				F3CFD8172BE0CC65001353AD /* Assets.xcassets */,
 				F3CFD8192BE0CC65001353AD /* LaunchScreen.storyboard */,
+				F3CFD8252BE0D5B5001353AD /* ARTest.json */,
 			);
 			path = ARProject;
 			sourceTree = "<group>";
@@ -123,9 +129,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3CFD8112BE0CC63001353AD /* art.scnassets in Resources */,
 				F3CFD8182BE0CC65001353AD /* Assets.xcassets in Resources */,
 				F3CFD8162BE0CC63001353AD /* Base in Resources */,
+				F3CFD8262BE0D5B5001353AD /* ARTest.json in Resources */,
 				F3CFD81B2BE0CC65001353AD /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3CFD8222BE0D4F8001353AD /* ARMarker.swift in Sources */,
 				F3CFD8132BE0CC63001353AD /* ViewController.swift in Sources */,
+				F3CFD8242BE0D50F001353AD /* SCNNode+.swift in Sources */,
 				F3CFD80F2BE0CC63001353AD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,6 +298,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XF4QP82U89;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -319,6 +328,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XF4QP82U89;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

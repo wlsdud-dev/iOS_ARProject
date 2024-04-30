@@ -1,0 +1,17 @@
+{
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "resources" : [
+    {
+      "filename" : "mot.arreferenceimage"
+    },
+    {
+      "filename" : "qrcode.arreferenceimage"
+    },
+    {
+      "filename" : "tastycode.arreferenceimage"
+    }
+  ]
+}
